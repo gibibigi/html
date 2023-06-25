@@ -1,7 +1,12 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Titilium+Web);
+@font-face {
+    font-family: 'FonteL';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body{
-    background-color: white;
+    background-color: #dddddd;
     color: rgba(0,0,0,1);
 }
 
@@ -34,6 +39,141 @@ figure.a figcaption{
     transition: opacity 1s;
 }
 
+nav#menu  ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 400px;
+}
+
+nav#menu li:hover{
+    background-color: #606060;
+}
+
+nav#menu  li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu a{
+    color: #000000;
+    text-decoration: none;
+}
+
+div#i{
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgb(0,0,0,.5);
+    padding: 10px;
+}
+
+header#c img#ic{
+    position: absolute;
+    left: 940px;
+    top: 40px;
+}
+
+header#c{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#c h1{
+    font-family: 'FonteL', sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#c h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+nav#menu{
+    display: block;
+}
+
+nav#menu  h1{
+    display: none;
+}
+
 figure.a:hover figcaption{
     opacity: 1;
+}
+
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
+}
+
+table#ta{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#ta td{
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+
+table#ta td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#ta td.cd{ background-color: #cecece}
+
+table#ta caption{
+    color: #888888;
+    font-size: 10pt;
+    font-weight: bolder;
+}
+
+table#ta caption span{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
 }
