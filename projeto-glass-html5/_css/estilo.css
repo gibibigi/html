@@ -8,6 +8,29 @@
 body{
     background-color: #dddddd;
     color: rgba(0,0,0,1);
+    font-family: Arial, sans-serif;
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+aside#lateral h1{
+    font-family: 'FonteL', sans-serif;
+    font-size: 20pt;
+    margin-top: 0px;
+}
+
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
 }
 
 p{
@@ -130,6 +153,10 @@ aside#lateral{
     display: block;
     width: 350px;
     float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 2px rgb(0,0,0,.5);
 }
 
 footer#rodape{
@@ -176,4 +203,35 @@ table#ta caption span{
     color: #000000;
     font-size: 8pt;
     margin-top: 10px;
+}
+
+article#np h2{
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#ca h1{
+    font-family: 'FonteL', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+}
+
+header#ca h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#ca h3{
+    font-size: 12pt;
+    color: #606060;
+}
+
+.aaa{
+    text-align: right;
 }
