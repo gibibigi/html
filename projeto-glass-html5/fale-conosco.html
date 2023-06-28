@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Tudo sobre o Google Glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
 </head>
 <script language="JavaScript" src="_javascript/funcoes.js"></script>
 <body>
@@ -30,36 +31,84 @@
         </nav>
     </header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+    <section id="crpo">
+        <article id="np">
+            <header id="ca">
+                <hgroup>
+                    <h3>Fale Conosco > Contato</h3>
+                    <h1>Formulário de Contato</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3 class="aaa">Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+            <form action="mailto:lucas.barbosa24@fatecitapetininga.edu.br" method="post" id="ico" autocomplete="on">
+                <fieldset id="a">
+                    <legend>Identificação do Usuário</legend>
+                    <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+                    <p><label for="is">Senha:</label> <input type="password" name="senha" id="is" size="10" maxlength="8" placeholder="Insira sua Senha"></p>
+                    <p><label for="iemail">E-mail:</label> <input type="email" name="email" id="iemail" size="20" maxlength="30" placeholder="Insira seu Email"></p>
+                    <fieldset id="s"><legend>Sexo</legend>
+                        <input type="radio" name="sex" id="imasc"><label for="imasc">Masculino</label>
+                        <input type="radio" name="sex" id="ifem"><label for="ifem">Feminino</label>
+                    </fieldset>
+                    <p><label for="idata">Data de Nascimento</label>:<input type="date" name="data" id="idata"></p>
+                </fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+                <fieldset id="b">
+                    <legend>Endereço do Usuário</legend>
+                    <p><label for="iend">Logradouro:</label> <input type="text" name="end" id="iend" size="17" maxlength="80" placeholder="Digite seu endereço aqui"></p>
+                    <p><label for="inu">Número:</label> <input type="number" name="nu" id="inu" min="0" max="99999"></p>
+                    <p>Estado:
+                        <select name="est" id="iest">
+                            <optgroup label="região suldeste">
+                                <option selected value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="MG">Minas Gerais</option>
+                            </optgroup>
+                            <optgroup label="região sul">
+                                <option value="PR">Paraná</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>Cidade:<input type="text" name="cit" id="icit" maxlength="40" size="20" placeholder="Digite o nome de sua cidade" list="cid">
+                        <datalist id="cid">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niterói"></option>
+                            <option value="Belford Roxo"></option>
+                        </datalist></p>
+                </fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+                <fieldset id="cc">
+                    <legend>Mensagem do Usuário</legend>
+                    <p>
+                        <label for="iurg">Grau de Urgência:</label>Min<input type="range" name="urg" id="iurg" min="0" max="10" step="2"/>Máx
+                    </p>
+                    <p>
+                        <label for="imsg">Mensagem:</label>
+                        <textarea name="msg" id="imsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea
+                        ></p>
+                </fieldset>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+                <fieldset id="d">
+                    <legend>Quero um Google Glass</legend>
+                    Gostaria de adquirir um Google Glass quando disponível
+                    Cor:
+                    Quantidade:
+                    Preço Total: R$
+                </fieldset>
 
 
-[BOTÃO ENVIAR]
-
+                [BOTÃO ENVIAR]
+            </form>
+        </article>
+    </section>
+            <footer id="rodape">
+                <p>Copyright &copy; 2013 - by Gustavo Guanabara <br> <a href="http://facebook.com/cursoemvideo" target="_blank">Facebook</a> <a href="http://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
+            </footer>
+    </div>
+</body>
+</html>
