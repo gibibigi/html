@@ -7,6 +7,13 @@
     <link rel="stylesheet" type="text/css" href="_css/form.css">
 </head>
 <script language="JavaScript" src="_javascript/funcoes.js"></script>
+<script>
+    function calc_T(){
+        var qtd = parseInt(document.getElementById('iqtd').value);
+        tot = qtd * 1500;
+        document.getElementById('itot').value = tot;
+    }
+</script>
 <body>
 <div id="i">
     <header id="c">
@@ -42,7 +49,7 @@
                 </hgroup>
             </header>
 
-            <form action="mailto:lucas.barbosa24@fatecitapetininga.edu.br" method="post" id="ico" autocomplete="on">
+            <form action="mailto:lucas.barbosa24@fatecitapetininga.edu.br" method="post" id="ico" autocomplete="on" oninput="calc_T();">
                 <fieldset id="a">
                     <legend>Identificação do Usuário</legend>
                     <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" size="20" maxlength="30" placeholder="Nome Completo"></p>
@@ -95,14 +102,25 @@
 
                 <fieldset id="d">
                     <legend>Quero um Google Glass</legend>
-                    Gostaria de adquirir um Google Glass quando disponível
-                    Cor:
-                    Quantidade:
-                    Preço Total: R$
+                    <p>
+                        <input type="checkbox" name="caixa" id="icai" checked>
+                        <label for="icai">Gostaria de adquirir um Google Glass quando disponível</label>
+                    </p>
+                    <p>
+                        <label for="icor">Cor:</label>
+                        <input type="color" name="cor" id="icor" value="#0000ff">
+                    </p>
+                    <p>
+                        <label for="iqtd">Quantidade:</label>
+                        <input type="number" name="qtd" id="iqtd" min="0" max="5" value="0">
+                    </p>
+                    <p>
+                        <label for="itot">Preço Total: R$</label>
+                        <input type="text" name="tot" id="itot" placeholder="Total a Pagar" readonly>
+                    </p>
                 </fieldset>
 
-
-                [BOTÃO ENVIAR]
+                <input type="image" name="env" src="_imagens/botao-enviar.png">
             </form>
         </article>
     </section>
