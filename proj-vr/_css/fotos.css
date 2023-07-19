@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Kanit&display=swap);
-
+/*
+https://favicon.io/favicon-converter/
+*/
 ul#af{
     width: 700px;
     margin: 0 auto;
@@ -25,7 +27,7 @@ ul#af li span{
     color: #ffffff;
     text-shadow: 1px 1px 1px #000000;
     background-color: rgba(0,0,0,.3);
-    font-size: 9pt;
+    font-size: 6.2pt;
     line-height: 370px;
     padding: 5px;
 }
