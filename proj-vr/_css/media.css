@@ -15,11 +15,11 @@ audio#a{
     width: 300px;
 }
 
-video#v{
+iframe{
     display: block;
     position: relative;
     left: 100px;
     top: 50px;
-    width: 440px;
+    width: 420px;
     height: 300px;
 }

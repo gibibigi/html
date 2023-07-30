@@ -16,6 +16,24 @@ CEF2E5
 
 <p>Copyright &copy; 2013 - by Gustavo Guanabara <br> <a href="http://facebook.com/cursoemvideo" target="_blank">Facebook</a> <a href="http://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
 https://pt.wikipedia.org/wiki/Realidade_virtual
+
+<video id="v2" controls="controls">
+                <source src="_media/20210331_171507.mp4">
+            </video>
+
+            <video id="v1" controls="controls">
+                    <source src="_media/20210331_171507.mp4">
+                </video>
+
+                <li onmouseover="mFoto('_imagens/especificacoes.png')" onmouseout="mFoto('_imagens/a21.png')"><a href="specs.html">Especificações</a></li>
+
+                <li onmouseover="mFoto('_imagens/especificacoes.png')" onmouseout="mFoto('_imagens/fotos.png')"><a href="specs.html">Especificações</a></li>
+
+                <li onmouseover="mFoto('_imagens/especificacoes.png')" onmouseout="mFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+
+                <li onmouseover="mFoto('_imagens/especificacoes.png')" onmouseout="mFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+
+                <li onmouseover="mFoto('_imagens/especificacoes.png')" onmouseout="mFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
 */
 
 body{
